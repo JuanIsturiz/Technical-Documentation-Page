@@ -1,0 +1,270 @@
+/* Global stuff */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+p,
+a,
+li {
+  opacity: 0.85;
+}
+
+/* Header and navbar stuff */
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+#navbar header {
+  display: none;
+}
+#nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+}
+
+#navbar-title {
+  position: absolute;
+  left: 0;
+  width: 280px;
+  margin: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#navbar-title h1 {
+  font-size: 1.75rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 300px;
+  top: 57px;
+  left: 0;
+  max-height: 576px;
+  overflow-y: auto;
+}
+
+.navbar li {
+  padding: 13px 30px;
+  border-top: 1px solid rgb(161, 161, 161);
+}
+
+.navbar a {
+  max-width: 300px;
+}
+
+/* Main page stuff */
+
+main {
+  font-size: 0.95rem;
+  line-height: 22px;
+  padding: 25px 35px;
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: auto;
+  border-left: 3px solid rgb(161, 161, 161);
+}
+
+main h1 {
+  font-size: 1.75rem;
+  margin: 16px 0;
+}
+
+main .text-info {
+  margin-left: 15px;
+}
+
+main ul {
+  padding-left: 40px;
+}
+
+main li {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+main .content {
+  margin: 16px 0;
+}
+main p {
+  margin-top: 16px;
+}
+
+.code-text {
+  background-color: rgb(248, 248, 248);
+  border-radius: 5px;
+  margin: 25px;
+  padding: 10px;
+}
+.code-text code{
+  opacity: 0.8;
+  width: 50%;
+  font-size: 0.75rem;
+  font-family: monospace;
+  line-height: 24px;
+}
+
+#inside-ul {
+  margin-left: 60px;
+  list-style: circle;
+}
+
+/* @media for tables */
+
+@media only screen and (max-width: 768px) and (min-width: 460px) {
+  h1 {
+    opacity: 0.9;
+  }
+
+  #nav-header,
+  .navbar,
+  #navbar-title {
+    width: 230px;
+  }
+
+  #navbar-title {
+    margin: 12px auto;
+  }
+
+  #navbar-title h1 {
+    font-size: 1.45rem;
+  }
+  .navbar {
+    position: fixed;
+    height: auto;
+    overflow-y: unset;
+  }
+  .navbar li {
+    padding: 13px 20px;
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding: 15px;
+    left: 230px;
+  }
+
+  main h1 {
+    font-size: 1.45rem;
+  }
+
+  main ul {
+    padding-left: 20px;
+  }
+
+  main .code-text {
+    padding: 3px 15px;
+  }
+
+  .code-text code {
+    width: 70%;
+  }
+
+  #inside-ul {
+    margin-left: 30px;
+  }
+}
+
+/* @media for phones */
+
+@media only screen and (max-width: 460px) {
+  html {
+    font-size: 12px;
+  }
+
+  h1 {
+    opacity: 0.7;
+  }
+
+  #nav-header,
+  .navbar,
+  #navbar-title {
+    width: 125px;
+  }
+
+  #navbar-title {
+    margin: 5px auto;
+  }
+
+  #navbar-title h1 {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    top: 25px;
+    height: 100%;
+  }
+
+  .navbar li {
+    font-size: 0.6rem;
+    padding: 5px 10px;
+  }
+  main {
+    padding: 5px 5px 15px 5px;
+    padding-bottom: 15px;
+    left: 125px;
+    border-left-width: 1px;
+    line-height: normal;
+  }
+
+  main h1 {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  main .content {
+    margin: 4px 0;
+  }
+  main p {
+    margin-top: 8px;
+  }
+
+  main .text-info {
+    margin-left: 8px;
+  }
+
+  main ul {
+    padding-left: 15px;
+  }
+
+  main li {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  p,
+  a,
+  li {
+    font-size: 0.75rem;
+    opacity: 0.8;
+  }
+
+  .code-text {
+    margin: 10px;
+    padding: 1px 5px;
+  }
+  .code-text code {
+    width: 100%;
+    font-size: 0.55rem;
+    line-height: 14px;
+    opacity: 0.8;
+  }
+  #inside-ul {
+    margin-left: 15px;
+  }
+}
